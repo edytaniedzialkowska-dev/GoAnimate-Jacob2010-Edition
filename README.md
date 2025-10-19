@@ -9,3 +9,11 @@ npm start
 ```
 **When done, go to your web browser and navigate to `localhost`.**
 
+
+# How To Use
+
+1. All Need To Go To? FlashThemes Get Flash, https://cdn.cleanflash.org/CleanFlash_34.0.0.308_Installer.exe and https://ungoogled-software.github.io/ungoogled-chromium-binaries/releases/windows/64bit/67.0.3396.87-3
+2. Install To Clean Flash Player and Install To Chromium
+3. Click To chrome
+4. And BOOM! There We Go, You Got a GoAnimate Jacob2010 Edition!
+

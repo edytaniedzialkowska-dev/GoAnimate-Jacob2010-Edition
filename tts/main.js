@@ -142,34 +142,6 @@ module.exports = (voiceName, text) => {
 				});
 				break;
 			}
-      case "tiktok": {
-					const req = https.request(
-						{
-							hostname: "tiktok-tts.weilnet.workers.dev",
-							path: "/api/generation",
-							method: "POST",
-							headers: {
-								"Content-type": "application/json"
-							}
-						},
-						(r) => {
-							let body = "";
-							r.on("data", (b) => body += b);
-							r.on("end", () => {
-								const json = JSON.parse(body);
-								if (json.success !== true) rej(json.error);
-
-								res(Buffer.from(json.data, "base64"));
-							});
-							r.on("error", rej);
-						}
-					).on("error", rej);
-					req.end(JSON.stringify({
-						text: text,
-						voice: voice.arg
-					}));
-					break;
-				}
 			case "vocalware": {
 				var [eid, lid, vid] = voice.arg;
 				var cs = md5(`${eid}${lid}${vid}${text}1mp35883747uetivb9tb8108wfj`);
@@ -301,39 +273,6 @@ module.exports = (voiceName, text) => {
 						r.on("end", () => res(Buffer.concat(buffers)));
 						r.on("error", rej);
 					}
-				);
-				break;
-			}
-			case "cereproc": {
-				const req = https.request(
-					{
-						hostname: "www.cereproc.com",
-						path: "/themes/benchpress/livedemo.php",
-						method: "POST",
-						headers: {
-							"content-type": "text/xml",
-							"accept-encoding": "gzip, deflate, br",
-							origin: "https://www.cereproc.com",
-							referer: "https://www.cereproc.com/en/products/voices",
-							"x-requested-with": "XMLHttpRequest",
-							cookie: "Drupal.visitor.liveDemo=666",
-						},
-					},
-					(r) => {
-						var buffers = [];
-						r.on("data", (d) => buffers.push(d));
-						r.on("end", () => {
-							const xml = String.fromCharCode.apply(null, brotli.decompress(Buffer.concat(buffers)));
-							const beg = xml.indexOf("https://cerevoice.s3.amazonaws.com/");
-							const end = xml.indexOf(".mp3", beg) + 4;
-							const loc = xml.substr(beg, end - beg).toString();
-							get(loc).then(res).catch(rej);
-						});
-						r.on("error", rej);
-					}
-				);
-				req.end(
-					`<speakExtended key='666'><voice>${voice.arg}</voice><text>${text}</text><audioFormat>mp3</audioFormat></speakExtended>`
 				);
 				break;
 			}

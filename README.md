@@ -1,5 +1,5 @@
-# GoAnimate Jacob2010 Edition
-This is an API wrapper for GoAnimate's Legacy Video Maker and GoAnimate Jacob2010 Edition, which had been retired on *19th December 2019, 03:10 UTC*.	and Original Wrapper Online Diamond Was Hacked And Permanently Shut Down And By Ransomware *On 27th August, 2025,* Unlike other services that attempt to sole the same problem, this project allows the LVM to access data peristence and is very portable.  Please keep in mind that not all features designed to run on the original API work properly.
+# GoAnimate-Jacob2010-Edition
+This is an API wrapper for GoAnimate's Legacy Video Maker and GoAnimate Jacob2010 Edition, which had been retired on *19th December 2019, 03:10 UTC*.	and Original Wrapper Online Diamond Was Hacked And Permanently Shut Down And By Ransomware For Some Reason The All! *On 27th August, 2025,* Unlike other services that attempt to sole the same problem, this project allows the LVM to access data peristence and is very portable.  Please keep in mind that not all features designed to run on the original API work properly.
 
 
 # How To Use

@@ -10,3 +10,7 @@ This is an API wrapper for GoAnimate's Legacy Video Maker and GoAnimate Jacob201
 4. Click To chrome
 5. And BOOM! There We Go, You Got a GoAnimate Jacob2010 Edition!
 
+
+# How To Host In Replit
+https://www.youtube.com/watch?v=5IIiqbplmhE
+

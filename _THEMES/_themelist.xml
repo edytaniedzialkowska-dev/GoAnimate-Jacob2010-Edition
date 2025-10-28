@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list version="1.0">
 	<fvm_meta theme_code="" is_biz="0" />
-	<!--theme id="business" name="Business Friendly" thumb="" cc_theme_id="business" /-->
-	<!--theme id="whiteboard" name="Whiteboard Animation" thumb="" cc_theme_id="whiteboard" /-->
-	<!--theme id="infographics" name="Video Infographics" thumb="" cc_theme_id="infographics" /-->
 	<theme id="custom" name="Comedy World" thumb="" cc_theme_id="custom" />
         <theme id="bogdan_importedassets" name="Lynn Grantz & Bogdan's Imported Assets" thumb="" cc_theme_id="bogdan_importedassets" />
         <theme id="Community_Library" name="Community Library" thumb="" cc_theme_id="Community_Library" />

@@ -4545,51 +4545,6 @@
 	<char id="400001013" name="GoTest334 (Beta Tester)" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:The Credits</tags>
 	</char>
-        <char id="fdc914a" name="Alan Kuba Kołodziejczak" cc_theme_id="family" thumbnail_url="/stock_thumbs/fdc914a.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="40ab815" name="Alan Kuba Kołodziejczak (Version 2)" cc_theme_id="family" thumbnail_url="/stock_thumbs/40ab815.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="ec0257e" name="Jacob2010 (W:O Credits)" cc_theme_id="family" thumbnail_url="/stock_thumbs/ec0257e.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="3e0636b" name="Alan Kuba Kołodziejczak (2024)" cc_theme_id="family" thumbnail_url="/stock_thumbs/3e0636b.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="ee57322" name="Alan Kuba Kołodziejczak (2025)" cc_theme_id="family" thumbnail_url="/stock_thumbs/ee57322.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="1d61c21" name="Winnie Pooh" cc_theme_id="family" thumbnail_url="/stock_thumbs/1d61c21.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="45953f7" name="Tigger" cc_theme_id="family" thumbnail_url="/stock_thumbs/45953f7.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="1649ee4" name="Sister Bob" cc_theme_id="family" thumbnail_url="/stock_thumbs/1649ee4.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="fce0727" name="Bob Kid" cc_theme_id="family" thumbnail_url="/stock_thumbs/fce0727.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="4536923" name="Piglet" cc_theme_id="family" thumbnail_url="/stock_thumbs/4536923.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="48467cf" name="Jamaly" cc_theme_id="family" thumbnail_url="/stock_thumbs/48467cf.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="32e881e" name="Weegee" cc_theme_id="family" thumbnail_url="/stock_thumbs/32e881e.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="00332dd" name="Julian Martynowski" cc_theme_id="family" thumbnail_url="/stock_thumbs/00332dd.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="b31aa9e" name="Childish Bob" cc_theme_id="family" thumbnail_url="/stock_thumbs/b31aa9e.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
-        <char id="50d31d1" name="Gummy" cc_theme_id="family" thumbnail_url="/stock_thumbs/50d31d1.png" copyable="Y">
-		<tags>family,_free,_cat:New Stock Character</tags>
-	</char>
 
 	<char id="327412169" name="Made by GoTube" cc_theme_id="family" thumbnail_url="char-default.png" copyable="Y">
 		<tags>family,_free,_cat:Made by GoTube</tags>

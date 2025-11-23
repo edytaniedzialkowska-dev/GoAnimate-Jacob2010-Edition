@@ -12,5 +12,5 @@ This is an API wrapper for GoAnimate's Legacy Video Maker and GoAnimate Jacob201
 
 
 # How To Host In Replit
-https://www.youtube.com/watch?v=5IIiqbplmhE
+https://edytaniedzialkowska-dev.github.io/bonus/tutorial_replit_on_goanimate/How%20to%20go%20to%20GoAnimate%20in%20your%20Devices!%20(FREE%20TO%20USE!%202025%20WORKING!).mp4
 

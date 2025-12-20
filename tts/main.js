@@ -17,6 +17,101 @@ module.exports = (voiceName, text) => {
 	return new Promise(async (res, rej) => {
 		const voice = voices[voiceName];
 		switch (voice.source) {
+                        case "cepstral": {
+                https.get('https://www.cepstral.com/en/demos', r => {
+                    const cookie = r.headers['set-cookie'];
+                    var q = qs.encode({
+                        voice: voice.arg,
+                        voiceText: text,
+                        rate: 170,
+                        pitch: 1,
+                        sfx: 'none',
+                    });
+                    var buffers = [];
+                    var req = https.get({
+                        host: 'www.cepstral.com',
+                        path: `/demos/createAudio.php?${q}`,
+                        headers: { Cookie: cookie },
+                        method: 'GET',
+                    }, r => {
+                        r.on('data', b => buffers.push(b));
+                        r.on('end', () => {
+                            var json = JSON.parse(Buffer.concat(buffers));
+                            get(`https://www.cepstral.com${json.mp3_loc}`).then(res).catch(rej);
+                        })
+                    });
+                });
+                break;
+            }
+         case "cepstralfast": {
+                https.get('https://www.cepstral.com/en/demos', r => {
+                    const cookie = r.headers['set-cookie'];
+                    var q = qs.encode({
+                        voice: voice.arg,
+                        voiceText: text,
+                        rate: 170,
+                        pitch: 4.2,
+                        sfx: 'none',
+                    });
+                    var buffers = [];
+                    var req = https.get({
+                        host: 'www.cepstral.com',
+                        path: `/demos/createAudio.php?${q}`,
+                        headers: { Cookie: cookie },
+                        method: 'GET',
+                    }, r => {
+                        r.on('data', b => buffers.push(b));
+                        r.on('end', () => {
+                            var json = JSON.parse(Buffer.concat(buffers));
+                            get(`https://www.cepstral.com${json.mp3_loc}`).then(res).catch(rej);
+                        })
+                    });
+                });
+                break;
+            }
+                        case "tts-vampi-tech": {
+				var q = qs.encode({
+							text: text,
+							voice: voice.arg,
+							type: "text",
+							rate: "0",
+							volume: "100",
+							outType: "mp3",
+							sampleRate: "48000",
+							bitDepth: "16",
+							channels: "2",
+							events: "0",
+							transport: "stream",
+						}).toString();
+						https
+							.get(
+								{
+									host: "tts.vampi.tech",
+									path: `/api/synthesizeSpeech?${q}`,
+									headers: {
+										"Host": "tts.vampi.tech",
+										"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0",
+										"Accept": "*/*",
+										"Accept-Language": "en-US,en;q=0.5",
+										"Accept-Encoding": "gzip, deflate, br",
+										"Authorization": "7617b522af9b29275865f6794ed504a0",
+										Referer: "https://tts.vampi.tech/",
+										Origin: "https://tts.vampi.tech",
+										"Connection": "keep-alive",
+										"Sec-Fetch-Dest": "empty",
+										"Sec-Fetch-Mode": "cors",
+										"Sec-Fetch-Site": "same-site"
+						},
+					},
+					(r) => {
+						var buffers = [];
+						r.on("data", (d) => buffers.push(d));
+						r.on("end", () => res(Buffer.concat(buffers)));
+						r.on("error", rej);
+					}
+				);
+				break;
+			}
 			case "nextup": {
 				https.get("https://nextup.com/ivona/index.html", (r) => {
 					var q = qs.encode({

@@ -22,7 +22,7 @@ module.exports = function (req, res, url) {
 
 	var attrs, params, title;
 	switch (url.pathname) {
-		case '/go_full': {
+		case '/go_full-nowide': {
 			let presave = query.movieId && query.movieId.startsWith('m') ? query.movieId :
 				`m-${fUtil[query.noAutosave ? 'getNextFileId' : 'fillNextFileId']('movie-', '.xml')}`;
 			title = "Video Editor";
@@ -43,7 +43,7 @@ module.exports = function (req, res, url) {
 					'pts': '1', 'msg_index': '', 'ad': 0, 'has_asset_bg': 0, 'has_asset_char': 0, 'initcb': 'studioLoaded', 'retut': 0, 
 					'featured_categories': null, 's3base': 'https:\/\/s3.amazonaws.com\/fs.goanimate.com\/,https:\/\/assets.vyond.com\/',
 					'st': '', 'uisa': 0, 'u_info': 'OjI6dzVQck1nblJuVitRRVNzQ3V0Z3VaZ0RwWlU2SVlkeVVKdEhhdWJJeVM2cHpBVTJMX2szQ2liMjJYMU5rRE5VTmoxdWJTdjhMcV8xU0hfNnhaNm05ckpXeGdEZW0zem15Y201cV9hcjVwQ1FPRDRhY1dqeEtFQUpZT3o1dTh1SFUzU3RtdERTNU1nS0E9PQ==',
-					'free_trial': 0, 'tm': 'FIN', 'tray': 'action', 'isWide': 1, 'newusr': 1, 'goteam_draft_only': 0,
+					'free_trial': 0, 'tm': 'FIN', 'tray': 'action', 'isWide': 0, 'newusr': 1, 'goteam_draft_only': 0,
 				},
 				allowScriptAccess: 'always',
 			};

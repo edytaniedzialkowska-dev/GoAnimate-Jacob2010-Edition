@@ -1440,6 +1440,14 @@
 			"arg": "IVONA 2 Voice Eric22",
 			"desc": "Eric"
 		},
+                "eric": {
+			"country": "US",
+			"language": "en",
+			"gender": "M",
+			"source": "tts-vampi-tech",
+			"arg": "ATT-DT-14-Mike16",
+			"desc": "BFDI Speaker Box Voice"
+		},
 		"jennifer": {
 			"country": "US",
 			"language": "en",
